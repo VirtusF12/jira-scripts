@@ -125,9 +125,9 @@ Issues.search("project = NEWB2B AND issuetype = \"Рассчитать ФЭМ\""
     """)
 
     if (getWorkHoursInStatus(issue,"Запрос параметров") > 40.0) {
-        def email = "Glebova.G@russianpost.ru"
+        def email = "Username.G@ad.ru"
         def summary = "На ${issue.key} нет ответа от вашей группы сотрудников."
-        def body = "<p>На <a href=\"https://jira.russianpost.ru/browse/${issue.key}\">${issue.key}</a> нет ответа от вашей группы сотрудников. Просим вас принять ответные меры и предоставить ответ по запросу, чтобы избежать задержек.</p>"
+        def body = "<p>На <a href=\"https://jira.ad.ru/browse/${issue.key}\">${issue.key}</a> нет ответа от вашей группы сотрудников. Просим вас принять ответные меры и предоставить ответ по запросу, чтобы избежать задержек.</p>"
         sendEmail(email, summary, body)
     }
 

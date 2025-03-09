@@ -267,11 +267,6 @@ if (issue.getInwardLinks().size() > 0) {
         log.error("PI(${PI}) * 1 * weigthDID(${weigthDID}) + pointReg(${pointReg}) * 1 * 0.4 + (pointR(${pointR}) * 0.5 + pointCE(${pointCE}) * 0.5 ) * 0.3 + pointS(${pointS}) * 1 * 0.3 = ${scoringPoint}")
 
         return scoringPoint
-        // return """
-        //     <b>${scoringPoint}</b>
-        //     <!-- <br>
-        //     <p style=\"color:red\"><b>Ошибка связей с ДИД</b></p> -->
-        //     """
     }
 
     if (
@@ -308,9 +303,6 @@ if (issue.getInwardLinks().size() > 0) {
         log.error("PI(${PI}) * 1 * weigthDID(${weigthDID}) + pointReg(${pointReg}) * 1 * 0.4 + (pointR(${pointR}) * 0.5 + pointCE(${pointCE}) * 0.5 ) * 0.3 + pointS(${pointS}) * 1 * 0.3 = ${scoringPoint}")
 
         return scoringPoint
-        // return """
-        //     <b>${scoringPoint}</b>
-        //     """
 
     } else {
 
@@ -332,11 +324,6 @@ if (issue.getInwardLinks().size() > 0) {
         log.error("PI(${PI}) * 1 * weigthDID(${weigthDID}) + pointReg(${pointReg}) * 1 * 0.4 + (pointR(${pointR}) * 0.5 + pointCE(${pointCE}) * 0.5 ) * 0.3 + pointS(${pointS}) * 1 * 0.3 = ${scoringPoint}")
 
         return scoringPoint
-        // return """
-        //     <b>${scoringPoint}</b>
-        //     <!-- <br>
-        //     <p style=\"color:red\"><b>Ошибка связей с ДИД</b></p> -->
-        //     """
     }
 
 } else {
@@ -358,9 +345,4 @@ if (issue.getInwardLinks().size() > 0) {
     log.error("PI(${PI}) * 1 * weigthDID(${weigthDID}) + pointReg(${pointReg}) * 1 * 0.4 + (pointR(${pointR}) * 0.5 + pointCE(${pointCE}) * 0.5 ) * 0.3 + pointS(${pointS}) * 1 * 0.3 = ${scoringPoint}")
 
     return scoringPoint
-    // return """
-    //         <b>${scoringPoint}</b>
-    //         <br>
-    //         <!-- <p style=\"color:red\"><b>Ошибка связей с ДИД</b></p> -->
-    //         """
 }

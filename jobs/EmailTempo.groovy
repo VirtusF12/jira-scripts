@@ -267,11 +267,6 @@ try {
                     </table>
                 """
                 sendEmail(leadEmail, summaryEmail, headerTable+bodyTable+footerTable  + legend)
-                if (teams[idx].id == 25) sendEmail('Kovalenko_M@russianpost.ru', summaryEmail, headerTable+bodyTable+footerTable + legend)
-
-                sendEmail('Kuznetsov.Denis@russianpost.ru', summaryEmail, headerTable+bodyTable+footerTable  + legend)
-                //sendEmail('Irina_Koroleva@russianpost.ru', summaryEmail, headerTable+bodyTable+footerTable  + legend)
-                //}
             }
         } catch (Exception ex) {
             log.error(ex.message)

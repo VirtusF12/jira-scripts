@@ -57,8 +57,7 @@ try {
     def baseUrl = ComponentAccessor.getApplicationProperties().getString("jira.baseurl")
     def JIRA_API_URL = baseUrl + "/rest/tempo-teams/1/team"
     def JIRA_API_URL_2 = baseUrl + "/rest/tempo-teams/2/team/"
-    def user_pass = "atl-service-r00:SkgykETS@Fk4"
-    //def user_pass = "TempoBot:d.T+3U'o{%p_k"
+    def user_pass = "username:password"
 
     log.error("user_pass = ${user_pass}")
     def jira = new HTTPBuilder(JIRA_API_URL)

@@ -11,6 +11,23 @@ if (user != null) {
         setAssignee(user)
         setDescription("")
     }
+
+    /*
+        HAPI создание задачи от имени atl-service-r00
+    */
+    def userService = Users.getByName("atl-service-r00")
+    try {
+        Users.runAs(userService) {
+            Issues.create("AZ","Task") {
+                setSummary("test")
+                setAssignee(user)
+                setDescription("")
+            }
+        }
+    } catch (Exception ex) {
+        log.error(ex)
+    }
+
 } else {
     log.error("""
         issue.key = ${issue.key}
